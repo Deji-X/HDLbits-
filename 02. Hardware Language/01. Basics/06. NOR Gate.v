@@ -1,0 +1,14 @@
+/*
+
+*/
+// Verilog starter generated from this problem's VHDL interface.
+module top_module (
+        input wire a,
+    input wire b,
+    output wire y
+);
+
+    // TODO: Implement the behavior described above.
+    assign y = ~(a | b);
+
+endmodule
