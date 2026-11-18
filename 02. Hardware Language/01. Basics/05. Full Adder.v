@@ -30,3 +30,19 @@ NOTES
 sum is the XOR of all three inputs.
 cout is 1 whenever at least two of the three inputs are 1 (a 3-input majority function).
 */
+
+
+module top_module (
+    input a,
+    input b,
+    input cin,
+    output sum,
+    output cout
+);
+
+    // sum = a XOR b XOR cin
+    // cout = majority(a, b, cin)
+    assign sum = a ^ b ^ cin;
+    assign cout = (a & b) | (b & cin) | (a & cin);
+
+endmodule
