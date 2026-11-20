@@ -14,8 +14,8 @@ module top_module (
 );
 
     // TODO: Implement the behavior described above.
-    assign out_ot_bitwise = a || b;
-    assign out_or_logical = a | b;
+    assign out_or_bitwise = (a | b);
+    assign out_or_logical = (a || b);
   assign out_not =  {~b, ~a};
 
 endmodule
